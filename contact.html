@@ -8,6 +8,15 @@
     <meta name="keywords" content="Contact, WordPress Developer, Web Designer, Houston, Texas, Web Development Services">
     <meta name="author" content="Derrick Dedmon">
 
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://onegoodcoder.com/contact.html">
+    <meta property="og:title" content="Contact Derrick Dedmon - WordPress Developer & Web Designer">
+    <meta property="og:description" content="Get in touch for your next web project. WordPress development, web design, and SEO services in Houston, Texas.">
+    <meta property="og:image" content="https://onegoodcoder.com/images/Imug.png">
+
+    <link rel="canonical" href="https://onegoodcoder.com/contact.html">
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
@@ -140,8 +149,8 @@
                         <div class="contact-info">
                             <h4 class="mb-3">Quick Links</h4>
                             <div class="d-grid gap-2">
-                                <a href="skills.html" class="btn btn-outline-warning">View My Portfolio</a>
-                                <a href="#" class="btn btn-outline-warning">Download Resume</a>
+                                <a href="index.html#portfolio" class="btn btn-outline-warning">View My Portfolio</a>
+                                <a href="mailto:derrick@onegoodcoder.com?subject=Resume%20Request" class="btn btn-outline-warning">Request Resume</a>
                                 <a href="https://linkedin.com/in/derrickdedmon" class="btn btn-outline-warning" target="_blank" rel="noopener">
                                     <i class="bi bi-linkedin me-2"></i>LinkedIn Profile
                                 </a>
@@ -367,7 +376,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <p class="mb-0">&copy; 2024 Derrick Dedmon. All rights reserved.</p>
+                    <p class="mb-0">&copy; 2025 Derrick Dedmon. All rights reserved.</p>
                 </div>
                 <div class="col-md-6 text-md-end">
                     <a href="mailto:derrick@onegoodcoder.com" class="text-light me-3">
@@ -376,7 +385,7 @@
                     <a href="tel:+1-281-555-0123" class="text-light me-3">
                         <i class="bi bi-phone"></i> Phone
                     </a>
-                    <a href="#" class="text-light">
+                    <a href="https://linkedin.com/in/derrickdedmon" class="text-light" target="_blank" rel="noopener">
                         <i class="bi bi-linkedin"></i> LinkedIn
                     </a>
                 </div>
@@ -449,8 +458,10 @@
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href === '#') return;
                 e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
+                const target = document.querySelector(href);
                 if (target) {
                     target.scrollIntoView({
                         behavior: 'smooth',

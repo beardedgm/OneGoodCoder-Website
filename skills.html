@@ -4,9 +4,18 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Derrick Dedmon's professional CV and skills. Over 15 years of experience in WordPress development, web design, and SEO optimization in Houston, Texas.">
+    <meta name="description" content="Derrick Dedmon's professional CV and skills. Over 24 years of experience in WordPress development, web design, and SEO optimization in Houston, Texas.">
     <meta name="keywords" content="CV, Resume, Skills, WordPress Developer, Web Designer, Houston, Texas, Experience">
     <meta name="author" content="Derrick Dedmon">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://onegoodcoder.com/skills.html">
+    <meta property="og:title" content="Derrick Dedmon CV - Skills & Experience">
+    <meta property="og:description" content="Over 24 years of experience in WordPress development, web design, and SEO optimization in Houston, Texas.">
+    <meta property="og:image" content="https://onegoodcoder.com/images/Imug.png">
+
+    <link rel="canonical" href="https://onegoodcoder.com/skills.html">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
@@ -81,20 +90,20 @@
                 <div class="row align-items-center">
                     <div class="col-lg-8">
                         <h1 class="display-5 fw-bold mb-3">Professional Experience & Skills</h1>
-                        <p class="lead mb-4">Over 15 years of expertise in web development, design, and digital marketing</p>
+                        <p class="lead mb-4">Over 24 years of expertise in web development, design, and digital marketing</p>
                         <div class="d-flex flex-wrap gap-3">
                             <a href="#experience" class="btn btn-warning">Experience</a>
                             <a href="#skills" class="btn btn-outline-light">Skills</a>
                             <a href="#education" class="btn btn-outline-light">Education</a>
-                            <a href="#" class="btn btn-outline-light">
-                                <i class="bi bi-download me-2"></i>Download Resume
+                            <a href="mailto:derrick@onegoodcoder.com?subject=Resume%20Request" class="btn btn-outline-light">
+                                <i class="bi bi-download me-2"></i>Request Resume
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-4 text-center mt-4 mt-lg-0">
                         <div class="experience-stats">
                             <div class="stat-box">
-                                <h2 class="display-4 fw-bold text-warning mb-0">15+</h2>
+                                <h2 class="display-4 fw-bold text-warning mb-0">24+</h2>
                                 <p class="mb-0">Years Experience</p>
                             </div>
                         </div>
@@ -122,7 +131,7 @@
                             <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
                                 <span class="badge bg-success fs-6 px-3 py-2">07/2018 - Present</span>
                                 <div class="mt-2">
-                                    <small class="text-muted">6+ years</small>
+                                    <small class="text-muted">7+ years</small>
                                 </div>
                             </div>
                         </div>
@@ -468,7 +477,7 @@
                             <div>
                                 <h4>Church Websites - 70 Most Inspiring of 2017</h4>
                                 <p class="text-muted mb-2"><strong>ShareFaith Magazine</strong> - July 11, 2017</p>
-                                <a href="http://www.sharefaith.com/blog/2017/07/church-websites-70-most-inspiring-of-2017-2/" target="_blank" rel="noopener" class="btn btn-sm btn-outline-warning">
+                                <a href="https://www.sharefaith.com/blog/2017/07/church-websites-70-most-inspiring-of-2017-2/" target="_blank" rel="noopener" class="btn btn-sm btn-outline-warning">
                                     <i class="bi bi-eye me-1"></i>View Publication
                                 </a>
                             </div>
@@ -481,7 +490,7 @@
                             <div>
                                 <h4>40 Beautiful Church Website Designs</h4>
                                 <p class="text-muted mb-2"><strong>Vandelay Design</strong> - April 21, 2016</p>
-                                <a href="http://www.vandelaydesign.com/best-church-websites/" target="_blank" rel="noopener" class="btn btn-sm btn-outline-warning">
+                                <a href="https://www.vandelaydesign.com/best-church-websites/" target="_blank" rel="noopener" class="btn btn-sm btn-outline-warning">
                                     <i class="bi bi-eye me-1"></i>View Publication
                                 </a>
                             </div>
@@ -535,13 +544,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <p class="mb-0">&copy; 2024 Derrick Dedmon. All rights reserved.</p>
+                    <p class="mb-0">&copy; 2025 Derrick Dedmon. All rights reserved.</p>
                 </div>
                 <div class="col-md-6 text-md-end">
                     <a href="mailto:derrick@onegoodcoder.com" class="text-light me-3">
                         <i class="bi bi-envelope"></i> Contact
                     </a>
-                    <a href="#" class="text-light">
+                    <a href="https://linkedin.com/in/derrickdedmon" class="text-light" target="_blank" rel="noopener">
                         <i class="bi bi-linkedin"></i> LinkedIn
                     </a>
                 </div>
@@ -579,8 +588,10 @@
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href === '#') return;
                 e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
+                const target = document.querySelector(href);
                 if (target) {
                     const offsetTop = target.offsetTop - 100; // Account for fixed navbar
                     window.scrollTo({

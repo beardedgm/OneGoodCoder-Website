@@ -489,11 +489,14 @@ body {
 
 /* ===== LOADING ANIMATIONS ===== */
 .portfolio-image img {
-  opacity: 0;
   transition: opacity 0.3s ease;
 }
 
-.portfolio-image img.loaded {
+.js-loading .portfolio-image img {
+  opacity: 0;
+}
+
+.js-loading .portfolio-image img.loaded {
   opacity: 1;
 }
 
