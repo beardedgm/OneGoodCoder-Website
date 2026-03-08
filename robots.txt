@@ -1,4 +1,8 @@
+# robots.txt for onegoodcoder.com
+
 User-agent: *
 Allow: /
+Disallow: /.claude/
 
+# Sitemap
 Sitemap: https://onegoodcoder.com/sitemap.xml
