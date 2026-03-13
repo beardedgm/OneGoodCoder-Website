@@ -21,8 +21,7 @@ Personal portfolio website for **Derrick Dedmon**, Director of Communications & 
 ├── main.js             # Interactions and animations
 ├── robots.txt          # Crawler directives
 ├── sitemap.xml         # XML sitemap
-├── images/             # Portfolio and profile images
-└── .claude/            # Dev server config
+└── images/             # Portfolio and profile images
 ```
 
 ## Local Development
