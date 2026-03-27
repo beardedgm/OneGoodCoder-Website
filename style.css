@@ -728,6 +728,60 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ============================================
+   EDUCATION
+   ============================================ */
+.education__card {
+  max-width: 600px;
+  margin: 0 auto;
+  background: var(--color-bg-card);
+  border-radius: var(--border-radius-lg);
+  padding: var(--space-2xl) var(--space-2xl);
+  border: 1px solid var(--color-border);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.education__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px var(--color-shadow-md);
+}
+
+.education__accent {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-accent), var(--color-gold));
+  border-radius: 0 0 2px 2px;
+}
+
+.education__degree {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: var(--space-xs);
+}
+
+.education__minor {
+  font-size: var(--font-size-base);
+  color: var(--color-text-secondary);
+  font-weight: 500;
+  margin-bottom: var(--space-lg);
+}
+
+.education__school {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
+/* ============================================
    SKILLS
    ============================================ */
 .skills__grid {
